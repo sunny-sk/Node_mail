@@ -20,6 +20,9 @@ const mailSchema = new mongoose.Schema({
   sendDate: {
     type: Date,
     default: Date.now
+  },
+  success: {
+    type: Boolean
   }
 });
 
