@@ -31,7 +31,7 @@ app.listen(3000, () => {
   connctDB();
 });
 
-app.use("/sendMail", async (req, res) => {
+app.post("/sendMail", async (req, res) => {
   try {
     let mail = new Mail({
       from: process.env.SENDER_MAIL,
